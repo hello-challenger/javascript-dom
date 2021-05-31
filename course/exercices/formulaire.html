@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script src="/js/event.js" defer></script>
+
+
+    <title>Event</title>
+</head>
+
+<body>
+    <div class="box">
+        <a href="/course/exercices/onclick.html"><button>DOM</button></a>
+        <a href="/course/exercices/event.html"><button>Event</button></a>
+        <a href="../index.html"><button></button></a>
+        <a href="../index.html"><button></button></a>
+    </div>
+    <div class="box">
+        <a href="/course/exercices/keypress.html"><button>keypress</button></a>
+        <a href="/course/exercices/scroll.html"><button>scroll</button></a>
+        <a href="/course/exercices/mouse.html"><button>mouse</button></a>
+        <a href="/course/exercices/formulaire.html"><button>formulaire</button></a>
+    </div>
+
+    <!-- Event Onchange -->
+    <form action="" class="box">
+        <label for="onchange">Onchange</label>
+        <input name="onchange" type="text" onchange="doChange(event)">
+    </form>
+
+    <!-- Event Doclick -->
+    <form action="" class="box">
+        <div onclick="doClickDiv(event)">
+            <label for="onclick">Onclick</label>
+            <input name="oncclick" type="button" onclick="doClick(event)" value="Button">
+        </div>
+    </form>
+
+    <!-- Event Keypress -->
+    <div class="keypress box">
+        <h2>Appuyez une touche clavier : <span id="key"></span></h2>
+    </div>
+
+    <!-- Event Scroll -->
+    <nav class="scroll">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+
+    <form action="" class="box">
+        <input id="form" type="text" placeholder="Entrer votre nom">
+
+        <select name="" id="">
+            <option value="Selectioner votre language">Language</option>
+            <option value="PHP">PHP</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Ruby">Ruby</option>
+        </select>
+
+        <input type="checkbox" id="cgv">
+        <label for="cgv">Accepter les CGV</label>
+
+        <input type="submit" value="Valider">
+    </form>
+
+
+    <div class="mouseMove"></div>
+
+    <aside id="menuFooter">
+        <div class="boxFooter box">
+            <a href="/course/bom/window.html"><button> <strong>B</strong>rowser <strong>O</strong>bjet
+                    <strong>M</strong>odel</button></a>
+            <a href="/course/dom/document.html"><button><strong>D</strong>ocument <strong>O</strong>bjet
+                    <strong>M</strong>odel</button></a>
+            <a href="/course/exercices/exercice.html"><button>Exercices</button></a>
+            <a href="/index.html"><button>Return</button></a>
+        </div>
+    </aside>
+    <script src="/js/alert.js"></script>
+</body>
+
+</html>
